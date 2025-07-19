@@ -1,6 +1,21 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
+# }
+# 📊 显示效果
+# 📍 CCA101 (A Arrival):
+#    ETA窗口: 18.2min (最早) ~ 23.5min (最晚) | 可优化: 5.3min
+# 📍 CSN202 (B Arrival): 
+#    ETA窗口: 15.1min (最早) ~ 19.8min (最晚) | 可优化: 4.7min
+# 🎯 优化决策
+
+# 时间窗口大 → 更多灵活性来调整间隔
+# 最早ETA接近 → 可能需要指令其中一架直飞
+# 最晚ETA冲突 → 必须干预避免间隔不足
+
+
+
+
 from flask import Flask
 from flask_socketio import SocketIO, emit
 import time
